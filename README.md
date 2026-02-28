@@ -1,20 +1,20 @@
-## 🌐 **FINTRIX AI v8.0 - WEB INTEGRATION + MULTILINGUAL + CAMERA**
+##  **FINTRIX AI v8.0 - WEB INTEGRATION + MULTILINGUAL + CAMERA**
 
 Saya akan buatkan **Backend API Lengkap** untuk website kamu dengan fitur:
 
-### 🎯 **FITUR BACKEND UNTUK WEB:**
+###  **FITUR BACKEND UNTUK WEB:**
 
-1. **📸 Camera Integration** - API untuk upload foto struk dari webcam/hp
-2. **🌍 Multilingual** - Indonesia, English, Mandarin (auto-detect)
-3. **📊 Real-time Charts** - Data grafik siap pakai untuk frontend
-4. **🔗 REST API Lengkap** - Semua fitur bisa diakses via API
-5. **🗄️ Database** - SQLite/PostgreSQL untuk production
-6. **🔐 JWT Authentication** - Login aman untuk web
-7. **📱 Mobile Ready** - API untuk Android/iOS
+1. ** Camera Integration** - API untuk upload foto struk dari webcam/hp
+2. ** Multilingual** - Indonesia, English, Mandarin (auto-detect)
+3. ** Real-time Charts** - Data grafik siap pakai untuk frontend
+4. ** REST API Lengkap** - Semua fitur bisa diakses via API
+5. ** Database** - SQLite/PostgreSQL untuk production
+6. ** JWT Authentication** - Login aman untuk web
+7. ** Mobile Ready** - API untuk Android/iOS
 
 ---
 
-## 🚀 **BACKEND API STRUCTURE**
+##  **BACKEND API STRUCTURE**
 
 ```
 backend/
@@ -31,7 +31,7 @@ backend/
 
 ---
 
-## 📦 **INSTALL DEPENDENCIES**
+##  **INSTALL DEPENDENCIES**
 
 ```bash
 pip install fastapi uvicorn sqlalchemy jwt python-multipart pillow pytesseract opencv-python pandas numpy matplotlib yfinance googletrans==4.0.0rc1
@@ -39,7 +39,7 @@ pip install fastapi uvicorn sqlalchemy jwt python-multipart pillow pytesseract o
 
 ---
 
-## 🔥 **FULL BACKEND CODE**
+##  **FULL BACKEND CODE**
 
 ### **1. app.py - Main FastAPI Application**
 
@@ -378,19 +378,19 @@ async def chat(request: ChatRequest):
         # Nanti bisa diintegrasikan dengan model AI sungguhan
         responses = {
             "investasi": {
-                "id": "💡 **Tips Investasi:**\n• Mulai dengan saham blue chip (BBCA, BBRI, TLKM)\n• Investasi rutin (dollar cost averaging)\n• Diversifikasi jangan di satu saham\n• Investasi jangka panjang (>5 tahun)\n• Gunakan uang dingin (bukan uang kebutuhan)",
-                "en": "💡 **Investment Tips:**\n• Start with blue chip stocks (BBCA, BBRI, TLKM)\n• Practice dollar cost averaging\n• Diversify across sectors\n• Think long-term (>5 years)\n• Use emergency funds only",
-                "zh": "💡 **投资建议:**\n• 从蓝筹股开始 (BBCA, BBRI, TLKM)\n• 定期定额投资\n• 分散投资到不同行业\n• 长期投资 (>5年)\n• 使用闲置资金"
+                "id": " **Tips Investasi:**\n• Mulai dengan saham blue chip (BBCA, BBRI, TLKM)\n• Investasi rutin (dollar cost averaging)\n• Diversifikasi jangan di satu saham\n• Investasi jangka panjang (>5 tahun)\n• Gunakan uang dingin (bukan uang kebutuhan)",
+                "en": " **Investment Tips:**\n• Start with blue chip stocks (BBCA, BBRI, TLKM)\n• Practice dollar cost averaging\n• Diversify across sectors\n• Think long-term (>5 years)\n• Use emergency funds only",
+                "zh": " **投资建议:**\n• 从蓝筹股开始 (BBCA, BBRI, TLKM)\n• 定期定额投资\n• 分散投资到不同行业\n• 长期投资 (>5年)\n• 使用闲置资金"
             },
             "cuan": {
-                "id": "📈 **Tips Cuan:**\n• Beli saat harga turun (buy the dip)\n• Jual saat harga naik (take profit)\n• Jangan FOMO (Fear Of Missing Out)\n• Pelajari fundamental perusahaan\n• Sabar, investasi bukan judi",
-                "en": "📈 **Profit Tips:**\n• Buy the dip during corrections\n• Take profit at targets\n• Don't FOMO\n• Study company fundamentals\n• Be patient, investing is not gambling",
-                "zh": "📈 **盈利技巧:**\n• 下跌时买入\n• 达到目标时获利了结\n• 不要追高\n• 研究公司基本面\n• 保持耐心"
+                "id": " **Tips Cuan:**\n• Beli saat harga turun (buy the dip)\n• Jual saat harga naik (take profit)\n• Jangan FOMO (Fear Of Missing Out)\n• Pelajari fundamental perusahaan\n• Sabar, investasi bukan judi",
+                "en": " **Profit Tips:**\n• Buy the dip during corrections\n• Take profit at targets\n• Don't FOMO\n• Study company fundamentals\n• Be patient, investing is not gambling",
+                "zh": " **盈利技巧:**\n• 下跌时买入\n• 达到目标时获利了结\n• 不要追高\n• 研究公司基本面\n• 保持耐心"
             },
             "saham": {
-                "id": "📊 **Panduan Saham:**\n• Pelajari analisis fundamental (P/E, PBV, ROE)\n• Pelajari analisis teknikal (RSI, MACD, MA)\n• Ikuti berita ekonomi\n• Bergabung dengan komunitas investor\n• Mulai dengan modal kecil",
-                "en": "📊 **Stock Guide:**\n• Learn fundamental analysis (P/E, PBV, ROE)\n• Learn technical analysis (RSI, MACD, MA)\n• Follow economic news\n• Join investor communities\n• Start with small capital",
-                "zh": "📊 **股票指南:**\n• 学习基本面分析\n• 学习技术分析\n• 关注经济新闻\n• 加入投资者社区\n• 从小资金开始"
+                "id": " **Panduan Saham:**\n• Pelajari analisis fundamental (P/E, PBV, ROE)\n• Pelajari analisis teknikal (RSI, MACD, MA)\n• Ikuti berita ekonomi\n• Bergabung dengan komunitas investor\n• Mulai dengan modal kecil",
+                "en": " **Stock Guide:**\n• Learn fundamental analysis (P/E, PBV, ROE)\n• Learn technical analysis (RSI, MACD, MA)\n• Follow economic news\n• Join investor communities\n• Start with small capital",
+                "zh": " **股票指南:**\n• 学习基本面分析\n• 学习技术分析\n• 关注经济新闻\n• 加入投资者社区\n• 从小资金开始"
             }
         }
         
@@ -1270,9 +1270,9 @@ class Translator:
                 'zh': '你好！有什么可以帮您的？'
             },
             'invest_tips': {
-                'id': '💡 **Tips Investasi:**\n• Mulai dengan saham blue chip\n• Investasi rutin (DCA)\n• Diversifikasi\n• Investasi jangka panjang',
-                'en': '💡 **Investment Tips:**\n• Start with blue chips\n• Dollar cost averaging\n• Diversify\n• Long-term investing',
-                'zh': '💡 **投资建议:**\n• 从蓝筹股开始\n• 定期定额投资\n• 分散投资\n• 长期投资'
+                'id': ' **Tips Investasi:**\n• Mulai dengan saham blue chip\n• Investasi rutin (DCA)\n• Diversifikasi\n• Investasi jangka panjang',
+                'en': ' **Investment Tips:**\n• Start with blue chips\n• Dollar cost averaging\n• Diversify\n• Long-term investing',
+                'zh': ' **投资建议:**\n• 从蓝筹股开始\n• 定期定额投资\n• 分散投资\n• 长期投资'
             },
             'stock_help': {
                 'id': 'Untuk cek saham, gunakan: price AAPL, analyze BBCA.JK, atau market',
@@ -1991,7 +1991,7 @@ python-dotenv==1.0.0
 
 ---
 
-## 🚀 **CARA MENJALANKAN BACKEND**
+##  **CARA MENJALANKAN BACKEND**
 
 ### **1. Install semua dependencies**
 ```bash
@@ -2079,7 +2079,7 @@ function CameraScanner() {
 
 ---
 
-## 🌍 **MULTILINGUAL DETECTION**
+##  **MULTILINGUAL DETECTION**
 
 Backend otomatis akan:
 1. Deteksi bahasa dari pesan user
@@ -2125,7 +2125,7 @@ Frontend tinggal render dengan library chart seperti:
 
 ---
 
-## 🔐 **SECURITY NOTES**
+##  **SECURITY NOTES**
 
 1. **Ganti SECRET_KEY** di production
 2. **Use HTTPS** untuk production
@@ -2135,7 +2135,7 @@ Frontend tinggal render dengan library chart seperti:
 
 ---
 
-## 🎯 **SELESAI!**
+##  **SELESAI!**
 
 Backend siap digunakan untuk website kamu dengan fitur:
 
@@ -2147,4 +2147,4 @@ Backend siap digunakan untuk website kamu dengan fitur:
 ✅ **REST API lengkap**  
 ✅ **Auto language detection**  
 
-**Ada yang ditanyakan?** 😊
+**Ada yang ditanyakan?** 
